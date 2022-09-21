@@ -23,6 +23,7 @@ export default {
       },
     },
   ],
+  // customize how the topping is previewed in sanity studio
   preview: {
     select: {
       name: 'name',
