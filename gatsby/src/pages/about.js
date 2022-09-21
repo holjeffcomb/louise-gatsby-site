@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from '../components/Image';
+import louisePose from '../assets/images/louise-pose.jpg';
 
 const ImageStyle = styled.div`
   width: 100%;
@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <>
       <ImageStyle>
-        <Image src="louise-dusk.jpg" className="" alt="Louise at dusk" />
+        <img src={louisePose} className="" alt="Louise at dusk" />
       </ImageStyle>
       <h1>Hi, I'm Louise</h1>
       <p>

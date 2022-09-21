@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from '../components/Image';
+import louiseDusk from '../assets/images/louise-dusk.jpg';
 
 const ImageStyle = styled.div`
   width: 100%;
@@ -13,7 +13,7 @@ export default function IndexPage() {
     <>
       <h1>Louise Holcomb</h1>
       <ImageStyle>
-        <Image src="louise-pose.jpg" className="" alt="Louise backbend" />
+        <img src={louiseDusk} className="" alt="Louise backbend" />
       </ImageStyle>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
