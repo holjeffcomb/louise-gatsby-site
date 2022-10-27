@@ -4,7 +4,7 @@ dotenv.config({ path: '.env' });
 
 export default {
   siteMetadata: {
-    title: `Slick's Slices`,
+    title: `Louise Holcomb's Website`,
     siteUrl: 'https://www.louiseholcomb.com',
     description: 'Home Site for Louise Holcomb',
   },

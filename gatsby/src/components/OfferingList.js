@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 
 function SingleOffering({ offering }) {
   return (
@@ -9,6 +10,7 @@ function SingleOffering({ offering }) {
           <span className="mark">{offering.name}</span>
         </h2>
         <p>{offering.toppings.map((topping) => topping.name).join(', ')}</p>
+        <Img fluid={offering.image.asset.fluid} alt={offering.name} />
       </Link>
     </div>
   );

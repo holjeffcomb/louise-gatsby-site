@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import OfferingList from '../components/OfferingList';
 
 export default function OfferingsPage({ data }) {
-  const offerings = data.pizzas.nodes;
+  const offerings = data.offerings.nodes;
   return (
     <>
       <OfferingList offerings={offerings} />
@@ -13,7 +13,7 @@ export default function OfferingsPage({ data }) {
 
 export const query = graphql`
   query PizzaQuery {
-    pizzas: allSanityPizza {
+    offerings: allSanityPizza {
       nodes {
         name
         id
@@ -26,6 +26,9 @@ export const query = graphql`
         }
         image {
           asset {
+            fixed(width: 200, height: 200) {
+              ...GatsbySanityImageFixed
+            }
             fluid(maxWidth: 400) {
               ...GatsbySanityImageFluid
             }
